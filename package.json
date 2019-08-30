@@ -1,0 +1,28 @@
+{
+  "name": "sls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "mocha",
+    "local": "sls offline start",
+    "dynamodb": "sls dynamodb start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.519.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "serverless-http": "^2.3.0",
+    "shelljs": "^0.8.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.0",
+    "serverless-dynamodb-local": "^0.2.38",
+    "serverless-offline": "^5.10.1"
+  }
+}
