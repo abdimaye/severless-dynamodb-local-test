@@ -78,7 +78,9 @@ resources:
           -
             AttributeName: userId
             KeyType: HASH
-        ProvisionedThroughput:
-          ReadCapacityUnits: 1
-          WriteCapacityUnits: 1
+        # ProvisionedThroughput:
+        #   ReadCapacityUnits: 1
+        #   WriteCapacityUnits: 1
+        BillingMode: PAY_PER_REQUEST # on demand capacity
         TableName: ${self:custom.tableName}
+      # DeletionPolicy: Retain # set to prevent accidently deleting tables
