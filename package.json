@@ -4,7 +4,7 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
-    "test": "mocha",
+    "test": "node_modules/mocha/bin/_mocha",
     "local": "sls offline start",
     "dynamodb": "sls dynamodb start"
   },
